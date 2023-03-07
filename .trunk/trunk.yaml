@@ -8,6 +8,7 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
+    - black@23.1.0
     - flake8@6.0.0
     - git-diff-check
     - gitleaks@8.16.0
