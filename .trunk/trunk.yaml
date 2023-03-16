@@ -8,6 +8,8 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
+    - ruff@0.0.256
+    - yamllint@1.29.0
     - black@23.1.0
     - flake8@6.0.0
     - git-diff-check

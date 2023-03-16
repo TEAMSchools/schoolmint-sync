@@ -11,7 +11,7 @@ sudo apt-get -qq -y update --no-install-recommends &&
 python -m pip install --no-cache-dir --upgrade pip
 
 # install Trunk
-curl https://get.trunk.io -fsSL | bash -s -- -y
+curl https://get.trunk.io -fsSL | bash -s -- -y || true
 trunk install --ci
 
 # install pdm dependencies
