@@ -14,9 +14,10 @@ def main():
         data={"account_email": os.getenv("SCHOOLMINT_ACCOUNT_EMAIL")},
     )
 
-    response.raise_for_status()
-
-    print(response.json())
+    try:
+        response.raise_for_status()
+    finally:
+        print(response.json())
 
 
 if __name__ == "__main__":
